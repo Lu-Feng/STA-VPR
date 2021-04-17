@@ -1,0 +1,12 @@
+H_path: "/home/lf/Desktop/place/Garden/day_left/"     #the file path of historical (H_path) reference data
+aC_path: "/home/lf/Desktop/place/Garden/night_right/"   #the file path of all current (aC_path) query data
+H_range:     #the ID range of historical reference data
+  - 0        #first ID
+  - 200      #end ID+1
+aC_range:    #the ID range of all current query data
+  - 0
+  - 200
+tolerance: 2
+modelName: vgg         #vgg or densenet (the name of CNN model for extracting feature)
+GRPandRA_flag: False   #choose whether to apply Gaussian Random Projection and Restricted Alignment
+singleImg_flag: False  #choose whether to print the result of single image matching
