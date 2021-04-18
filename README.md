@@ -16,7 +16,10 @@ The Keras and TensorFlow are only required by the VGG16 model (will be downloade
 ## Steps
 - Download the [DenseNet161](http://places2.csail.mit.edu/models_places365/densenet161_places365.pth.tar) model pretrained on [Places365](https://github.com/CSAILVision/places365) and copy them to the STA-VPR folder. Note that if you use this pretrained model, please see the License required by [Places365](https://github.com/CSAILVision/places365).
 - You will need to update the configuration file "STAVPRconfig.yaml" changing some information, such as the file pathes of your images, model name, and so on. File names of images are expected in the format ImageXXX.jpg (e.g. Image0000.jpg). You can modify the expected format in the vgg.py ((Line 25 and 42)) and densenet.py (Line 81 and 100).
-- Run the 'STAVPR_demo.py' (python3 STAVPR_demo.py)
+- Run the 'STAVPR_demo.py' 
+```
+python3 STAVPR_demo.py
+```
 
 ## Acknowledgements 
 Arren Glover for the Gardens Point dataset
