@@ -4,13 +4,13 @@ This repository provides the code for our paper "[STA-VPR: Spatio-temporal Align
 ![spatial_alignment_sample](images/spatial_alignment_sample.png)
 
 ## Installation
-Python ≥3.5
-cuda ≥9.0
-Numba ≥0.44.1
-Keras ≥2.2.4
-TensorFlow ≥1.10
-Pytorch ≥1.1
-The Keras and TensorFlow are only required by the VGG model. You can just install PyTorch if you only need to use the Densenet model.
+- Python ≥3.5
+- cuda ≥9.0
+- Numba ≥0.44.1
+- Keras ≥2.2.4
+- TensorFlow ≥1.10
+- Pytorch ≥1.1
+- The Keras and TensorFlow are only required by the VGG model. You can just install PyTorch if you only need to use the Densenet model.
 
 ## Acknowledgements 
 Arren Glover for the Gardens Point dataset
