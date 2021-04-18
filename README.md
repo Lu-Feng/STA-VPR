@@ -11,7 +11,7 @@ This repository provides the code for our paper "[STA-VPR: Spatio-temporal Align
 - TensorFlow ≥1.10
 - Pytorch ≥1.1
 
-The Keras and TensorFlow are only required by the VGG16 model (will be downloaded when you run the code). You can just install PyTorch if you only need to use the DenseNet16 model.
+The Keras and TensorFlow are only required by the VGG16 model (will be downloaded when you run the code). You can just install PyTorch if you only need to use the DenseNet161 model.
 
 ## Steps
 - Download the [DenseNet161](http://places2.csail.mit.edu/models_places365/densenet161_places365.pth.tar) model pretrained on [Places365](https://github.com/CSAILVision/places365) and copy them to the STA-VPR folder. Note that if you use this pretrained model, please see the License required by [Places365](https://github.com/CSAILVision/places365).
