@@ -22,7 +22,7 @@ The Keras and TensorFlow are only required by the VGG16 model (will be downloade
 ```
 python3 STAVPRdemo.py
 ```
-- Above code will output a file "test.txt" that records the distance matrix between reference data and query data (you can comment out Line 176 in STAVPRdemo.py if don't need it), but not output temporal alignment between query seq and matched result seq. If you want know the alignment of a query seq with its matched seq, you can run the ""temporal_align.py".
+- Above code will output a file "test.txt" that records the distance matrix between reference data and query data (you can comment out Line 176 in STAVPRdemo.py if don't need it), but not output temporal alignment between query seq and matched result seq. If you want know the alignment between a query seq and its matched seq, you can run the "temporal_align.py".
 ```
 python3 temporal_align.py -s 180 -l 20 -n test.txt
 ```
