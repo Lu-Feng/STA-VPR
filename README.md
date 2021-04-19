@@ -26,7 +26,7 @@ python3 STAVPRdemo.py
 ```
 python3 temporal_align.py -s 180 -l 20 -n test.txt
 ```
-input parameter: -s: the start ID of query seq; -l: the length of query seq; -n: the file name of the distance matrix.
+  input parameter: -s: the start ID of query seq; -l: the length of query seq; -n: the file name of the distance matrix.
 
 ## Acknowledgements 
 Arren Glover for the Gardens Point dataset
