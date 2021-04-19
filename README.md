@@ -18,7 +18,7 @@ The Keras and TensorFlow are only required by the VGG16 model (will be downloade
 ## Steps
 - Download the [DenseNet161](http://places2.csail.mit.edu/models_places365/densenet161_places365.pth.tar) model pretrained on [Places365](https://github.com/CSAILVision/places365) and copy them to the STA-VPR folder. Note that if you use this pretrained model, please see the License required by [Places365](https://github.com/CSAILVision/places365).
 - You will need to update the configuration file "STAVPRconfig.yaml" changing some information, such as the file pathes of your images, model name, and so on. File names of images are expected in the format ImageXXX.jpg (e.g. Image000.jpg). You can modify the expected format in vgg.py (Line 25 and 42) and densenet.py (Line 81 and 100).
-- Run the 'STAVPRdemo.py' to get the matched result of all query sequences, F-score and PR curve. If you don't want to install Numba. You can change "STAVPR" in Line 19 in STAVPRdemo.py to "STAVPR_nonumba" to run the version without Numba. This version is not optimized and very time-consuming.
+- Run the 'STAVPRdemo.py' to get the matched result of all query sequences, F-score and PR curve. If you don't want to install Numba. You can change "STAVPR" in Line 19 in STAVPRdemo.py to "STAVPR_nonumba", to run the version without Numba. This version is not optimized and very time-consuming.
 ```
 python3 STAVPRdemo.py
 ```
