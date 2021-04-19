@@ -18,10 +18,15 @@ The Keras and TensorFlow are only required by the VGG16 model (will be downloade
 ## Steps
 - Download the [DenseNet161](http://places2.csail.mit.edu/models_places365/densenet161_places365.pth.tar) model pretrained on [Places365](https://github.com/CSAILVision/places365) and copy them to the STA-VPR folder. Note that if you use this pretrained model, please see the License required by [Places365](https://github.com/CSAILVision/places365).
 - You will need to update the configuration file "STAVPRconfig.yaml" changing some information, such as the file pathes of your images, model name, and so on. File names of images are expected in the format ImageXXX.jpg (e.g. Image000.jpg). You can modify the expected format in vgg.py (Line 25 and 42) and densenet.py (Line 81 and 100).
-- Run the 'STAVPRdemo.py' 
+- Run the 'STAVPRdemo.py' to get the matched result of all query sequences, F-score and PR curve.
 ```
 python3 STAVPRdemo.py
 ```
+- Above code will output a file "test.txt" that records the distance matrix between reference data and query data (you can comment out Line 176 in STAVPRdemo.py if don't need it), but not output temporal alignment between query seq and matched result seq. If you want know the alignment of a query seq with its matched seq, you can run the ""temporal_align.py".
+```
+python3 temporal_align.py -s 180 -l 20 -n test.txt
+```
+input parameter: -s: the start ID of query seq; -l: the length of query seq; -n: the file name of the distance matrix.
 
 ## Acknowledgements 
 Arren Glover for the Gardens Point dataset
