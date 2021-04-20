@@ -28,7 +28,7 @@ python3 temporal_align.py -s 180 -l 20 -n test.txt
 ```
 - In addition. If you want know the spatial alignment between two images, you can run the "spatial_align.py". (input parameter: -x: the path+name of the image X; -y: the path+name of the image Y.)
 ```
-python3 spatial_align.py -x ./image/left.jpg -y ./image/right.jpg
+python3 spatial_align.py -x ./images/left.jpg -y ./images/right.jpg
 ```
 
 ## Acknowledgements 
