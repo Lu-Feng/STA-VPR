@@ -184,7 +184,7 @@ if __name__ == '__main__':
         PRcurve_singleImg(minDistanList, argminDistanList)
 
     # code for sequence matching (i.e. LM-DTW)
-    [H_len, aC_len]=np.shape(D_aCH)
+    [aC_len, H_len]=np.shape(D_aCH)
     interval = 1  # the frame interval between two query sequences
     l = 20  # length of current qurey sequence
     count = int((aC_len-l)/interval+1) # count of match times, i.e. there are 'count' qurey sequences in total
