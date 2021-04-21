@@ -1,5 +1,5 @@
-H_path: "/home/lf/Desktop/place/Garden/day_left/"     #the file path of historical (H_path) reference data
-aC_path: "/home/lf/Desktop/place/Garden/night_right/"   #the file path of all current (aC_path) query data
+H_path: /home/lf/Desktop/place/Garden/day_left/     #the file path of historical (H_path) reference data
+aC_path: /home/lf/Desktop/place/Garden/night_right/   #the file path of all current (aC_path) query data
 H_range:     #the ID range of historical reference data
   - 0        #first ID
   - 200      #end ID+1
