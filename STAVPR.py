@@ -14,7 +14,7 @@ from sklearn import random_projection
 def LMDTW_Process(D_CH,tempList,out):
     Hl=D_CH.shape[1]  # length of seq H
     Cl=20  #length of seq C
-    Tl=40  #length of candidate seq T'
+    Tl=40  #length of candidate seq T' (Notice it isn't the length of T)
     for i in range(Hl):
         tempList[i][0]=1.0   #initialize seq distance to a value >=1
     k = cuda.grid(1)
@@ -52,7 +52,7 @@ def LMDTW_Process(D_CH,tempList,out):
                     D[i][j] = D[i][j] + D[i - 1][j - 1]
                     C[i][j] = 1 + C[i - 1][j - 1]
 
-        #-----------find the best local sebsequence of k-th candidate seq T for matching query seq---------------
+        #-----------find the best local sebsequence of k-th candidate seq T' for matching query seq---------------
         for j in range(Tl):
             if(D[Cl - 1][j]/C[Cl - 1][j]<tempList[k][0]):
                 tempList[k][0]=D[Cl - 1][j]/C[Cl - 1][j]   #for save seq distance between k-th candidate seq T and query seq
