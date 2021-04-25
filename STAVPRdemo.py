@@ -174,7 +174,7 @@ if __name__ == '__main__':
     print("size of distance matrix D_aCH:", np.shape(D_aCH))
     print("compute distance matrix D_aCH finished!\n")
     writeData(D_aCH,'test.txt')
-    # MM = loadData('test.txt')
+    # D_aCH = loadData('test.txt')
     D_aCH = np.array(D_aCH)
 
     # code for single image matching
