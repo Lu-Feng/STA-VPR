@@ -36,7 +36,7 @@ Arren Glover for the Gardens Point dataset
 
 ## Citation
 
-Please consider citing the following publication if you use any part of the provided code:
+If you find this code or our work helpful for your research, please cite the following papers:
 ```
 @ARTICLE{stavpr,
 author={F. {Lu} and B. {Chen} and X. -D. {Zhou} and D. {Song}},
