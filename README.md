@@ -33,7 +33,7 @@ python3 spatial_align.py -x ./images/left.jpg -y ./images/right.jpg
 ## Datasets 
 
 The datasets used in this work:
-- [Nordland(synth-Nord)](https://www.dropbox.com/s/o7lm0c9bv18q4zx/Nordland3584.zip?dl=0)
+- [Nordland(synth-Nord)](https://www.dropbox.com/s/o7lm0c9bv18q4zx/Nordland3584.zip?dl=0) *This Nordland dataset has been compressed, and the experimental result may be slightly different from that reported in our paper.
 - [Gardens Point](https://www.dropbox.com/s/171k7xq2fgt5n6j/Gardens%20Point.zip?dl=0)
 - [UA](https://www.dropbox.com/s/q79bud2ruc41any/UA.zip?dl=0)
 - [Berlin_A100](https://www.dropbox.com/s/3bdgpv0top3pj0a/BerlinA100.zip?dl=0)
