@@ -12,7 +12,6 @@ This repository provides the code for our paper "[STA-VPR: Spatio-temporal Align
 - TensorFlow ≥1.10
 - scikit-learn ≥0.19
 
-
 The Keras and TensorFlow are only required by the VGG16 model (will be downloaded when you run the code). You can just install PyTorch if you only need to use the DenseNet161 model.
 
 ## Steps
@@ -35,9 +34,9 @@ python3 spatial_align.py -x ./images/left.jpg -y ./images/right.jpg
 
 The datasets used in this work:
 
-[Nordland(synth-Nord)](https://www.dropbox.com/s/o7lm0c9bv18q4zx/Nordland3584.zip?dl=0)
+- [Nordland(synth-Nord)](https://www.dropbox.com/s/o7lm0c9bv18q4zx/Nordland3584.zip?dl=0)
 
-[Gardens Point](https://www.dropbox.com/s/171k7xq2fgt5n6j/Gardens%20Point.zip?dl=0)
+- [Gardens Point](https://www.dropbox.com/s/171k7xq2fgt5n6j/Gardens%20Point.zip?dl=0)
 
 [UA](https://www.dropbox.com/s/q79bud2ruc41any/UA.zip?dl=0)
 
