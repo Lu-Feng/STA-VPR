@@ -12,6 +12,8 @@ from sklearn import random_projection
 
 @cuda.jit
 def LMDTW_Process(D_CH,tempList,out):
+    '''sequence matching on gpu (LM-DTW process)
+    '''
     Hl=D_CH.shape[1]  # length of seq H
     Cl=20  #length of seq C
     Tl=40  #length of candidate seq T' (Notice it isn't the length of T)
@@ -84,7 +86,7 @@ def LMDTW(D_CH):
 
 @cuda.jit
 def alignDistance_Process(aC,H,D_aCH,flag):
-    '''matrix multiplication on gpu, naive method
+    '''computing aligned image distance on gpu (adaptive DTW process)
     '''
     ii, jj = cuda.grid(2)
     if ii < D_aCH.shape[0] and jj < D_aCH.shape[1]:
@@ -153,7 +155,7 @@ def alignDistance(aC, H, flag):
     cuda.close()
     l_aC=len(aC)
     l_H=len(H)
-    print("datasize(reference):",np.shape(aC),"\tdatasize(qurey):",np.shape(H))
+    print("datasize(reference):",np.shape(H),"\tdatasize(qurey):",np.shape(aC))
     d_aC = cuda.to_device(aC)  # d_ --> device
     d_H = cuda.to_device(H)
     d_DisMatD_aCH = cuda.device_array((l_aC, l_H), np.float32)       # for save distance matrix D_aCH
@@ -170,8 +172,6 @@ def alignDistance(aC, H, flag):
 
 @cuda.jit
 def cosineDistance_Process(aC,H,D_aCH):
-    '''matrix multiplication on gpu, naive method using global device memory
-    '''
     i, j = cuda.grid(2)
     if i < D_aCH.shape[0] and j < D_aCH.shape[1]:
         xy = modx = mody = 0.0
