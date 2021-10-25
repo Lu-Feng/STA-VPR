@@ -42,7 +42,7 @@ The datasets used in this work:
 
 ## Citation
 
-If you find this code or our work helpful for your research, please cite the following papers:
+If you find this code or our work helpful for your research, please cite the following paper:
 ```
 @ARTICLE{stavpr,
 author={F. {Lu} and B. {Chen} and X. -D. {Zhou} and D. {Song}},
