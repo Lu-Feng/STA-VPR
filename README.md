@@ -4,13 +4,13 @@ This repository provides the code for the IEEE RA-L paper "[STA-VPR: Spatio-temp
 ![spatial_alignment_sample](images/spatial_alignment_sample.png)
 
 ## Installation
-- Python ≥3.5
-- cuda ≥9.0
-- Numba ≥0.44.1
-- PyTorch ≥1.1
-- Keras ≥2.2.4
-- TensorFlow ≥1.10
-- scikit-learn ≥0.19
+- Python =3.5
+- cuda =9.0
+- Numba =0.44.1
+- PyTorch =1.1
+- Keras =2.2.4
+- TensorFlow =1.10
+- scikit-learn =0.19
 
 The Keras and TensorFlow are only required by the VGG16 model (will be downloaded when you run the code). You can just install PyTorch if you only need to use the DenseNet161 model.
 
