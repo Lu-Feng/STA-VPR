@@ -1,5 +1,5 @@
 # STA-VPR
-This repository provides the code for the IEEE RA-L paper "[STA-VPR: Spatio-temporal Alignment for Visual Place Recognition](https://ieeexplore.ieee.org/document/9382071)" by Feng Lu, Baifan Chen, Xiang-Dong Zhou, and Dezhen Song. The arXiv pre-print can found [here](https://arxiv.org/abs/2103.13580).
+This repository provides the code for the IEEE RA-L paper "[STA-VPR: Spatio-temporal Alignment for Visual Place Recognition](https://ieeexplore.ieee.org/document/9382071)" by Feng Lu, Baifan Chen, Xiang-Dong Zhou, and Dezhen Song. The arXiv pre-print can be found [here](https://arxiv.org/abs/2103.13580).
 
 ![spatial_alignment_sample](images/spatial_alignment_sample.png)
 
